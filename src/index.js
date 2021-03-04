@@ -1,10 +1,9 @@
-import "./styles.css";
+console.log("スプレット構文");
+const arr = [1,2];
+console.log(arr);
+console.log(...arr);
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+const sumF = (num1,num2) => console.log(num1+num2);
+sumF(...arr);
+
+
